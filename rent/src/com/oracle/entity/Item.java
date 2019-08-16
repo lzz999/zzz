@@ -1,4 +1,4 @@
-package com.oracle.entity;
+package entity;
 
 public class Item {
 	private int serialNumber;// ÏîÄ¿±àºÅ

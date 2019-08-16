@@ -1,5 +1,4 @@
 package com.oracle.dao;
-
 import java.sql.ResultSet;
 import java.sql.SQLException;
 

@@ -80,7 +80,8 @@ public class ItemView extends JFrame {
 		final JButton btn_Insert = new JButton();
 		btn_Insert.addActionListener(new ActionListener() {
 			public void actionPerformed(final ActionEvent e) {
-
+                          	AddJFrame add = new AddJFrame(tm);
+				add.setVisible(true);
 			}
 		});
 		btn_Insert.setText("添加");
@@ -142,6 +143,17 @@ public class ItemView extends JFrame {
 		tm.addColumn("钢管售价");
 		tm.addColumn("丝杠售价");
 		tm.addColumn("扣件售价");
+                try {
+			ArrayList<Item> list = is.select();
+			for (Item item : list) {
+			   tm.addRow(new Object[]{item.getSerialNumber(),item.getProjectName(),item.getSteelRent(),item.getScrewRent(),item.getFasteningRent(),item.getSteelPrice(),item.getScrewPrice(),item.getFasteningPrice()});
+			
+			
+			}
+		} catch (Exception e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
 
 	}
 
