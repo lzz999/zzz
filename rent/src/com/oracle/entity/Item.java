@@ -1,87 +1,123 @@
-package com.ceer.leyrt01;
+package com.oracle.entity;
 
 public class Item {
-	private int SerialNumber;// 项目编号
-	private String ProjectName;// 项目名称
-	private String SteelRent;// 钢管租价
-	private String ScrewRent;// 丝杠租价
-	private String FasteningRent;// 扣件租价
-	private String SteelPrice;// 钢管售价
-	private String ScrewPrice;// 丝杠售价
-	private String FasteningPrice;// 扣件售价
+	private int serialNumber;// 项目编号
+	private String projectName;// 项目名称
+	private String steelRent;// 钢管租价
+	private String screwRent;// 丝杠租价
+	private String fasteningRent;// 扣件租价
+	private String steelPrice;// 钢管售价
+	private String screwPrice;// 丝杠售价
+	private String fasteningPrice;// 扣件售价
+
+	
 
 	public int getSerialNumber() {
-		return SerialNumber;
+		return serialNumber;
 	}
+
+
 
 	public void setSerialNumber(int serialNumber) {
-		SerialNumber = serialNumber;
+		this.serialNumber = serialNumber;
 	}
+
+
 
 	public String getProjectName() {
-		return ProjectName;
+		return projectName;
 	}
+
+
 
 	public void setProjectName(String projectName) {
-		ProjectName = projectName;
+		this.projectName = projectName;
 	}
+
+
 
 	public String getSteelRent() {
-		return SteelRent;
+		return steelRent;
 	}
+
+
 
 	public void setSteelRent(String steelRent) {
-		SteelRent = steelRent;
+		this.steelRent = steelRent;
 	}
+
+
 
 	public String getScrewRent() {
-		return ScrewRent;
+		return screwRent;
 	}
+
+
 
 	public void setScrewRent(String screwRent) {
-		ScrewRent = screwRent;
+		this.screwRent = screwRent;
 	}
+
+
 
 	public String getFasteningRent() {
-		return FasteningRent;
+		return fasteningRent;
 	}
+
+
 
 	public void setFasteningRent(String fasteningRent) {
-		FasteningRent = fasteningRent;
+		this.fasteningRent = fasteningRent;
 	}
+
+
 
 	public String getSteelPrice() {
-		return SteelPrice;
+		return steelPrice;
 	}
+
+
 
 	public void setSteelPrice(String steelPrice) {
-		SteelPrice = steelPrice;
+		this.steelPrice = steelPrice;
 	}
+
+
 
 	public String getScrewPrice() {
-		return ScrewPrice;
+		return screwPrice;
 	}
+
+
 
 	public void setScrewPrice(String screwPrice) {
-		ScrewPrice = screwPrice;
+		this.screwPrice = screwPrice;
 	}
+
+
 
 	public String getFasteningPrice() {
-		return FasteningPrice;
+		return fasteningPrice;
 	}
 
+
+
 	public void setFasteningPrice(String fasteningPrice) {
-		FasteningPrice = fasteningPrice;
+		this.fasteningPrice = fasteningPrice;
 	}
+
+
 
 	@Override
 	public String toString() {
-		return "Entity [SerialNumber=" + SerialNumber + ", ProjectName="
-				+ ProjectName + ", SteelRent=" + SteelRent + ", ScrewRent="
-				+ ScrewRent + ", FasteningRent=" + FasteningRent
-				+ ", SteelPrice=" + SteelPrice + ", ScrewPrice=" + ScrewPrice
-				+ ", FasteningPrice=" + FasteningPrice + "]";
+		return "Item [serialNumber=" + serialNumber + ", projectName="
+				+ projectName + ", steelRent=" + steelRent + ", screwRent="
+				+ screwRent + ", fasteningRent=" + fasteningRent
+				+ ", steelPrice=" + steelPrice + ", screwPrice=" + screwPrice
+				+ ", fasteningPrice=" + fasteningPrice + "]";
 	}
+
+
 
 	public Item() {
 		super();
